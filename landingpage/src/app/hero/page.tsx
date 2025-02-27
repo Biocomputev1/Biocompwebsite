@@ -12,7 +12,7 @@ export const Hero = () => {
     return (
     <>
         <section className="dark:bg-gray-900">
-        <div className="mr-auto place-self-center -mb-60 bg-[url(/assets/background.svg)]">
+        <div className="mr-auto place-self-center -mb-60">
             <HeroHighlight>
                 <motion.h1
                     initial={{
