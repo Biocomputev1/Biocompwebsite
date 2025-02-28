@@ -8,7 +8,12 @@ import Card3 from "@/assets/card3image.png"
 import EarlyAccess from "@/assets/earlyAccessImage.png";
 import Pointer from "@/assets/pointer image.png";
 import { SubstackPosts } from "@/sections/blog";
+import { useRouter } from "next/navigation";
 export const Hero = () => {
+    const router = useRouter();
+    const handleClick = () => {
+      router.push("/signup");
+    };
     return (
     <>
         <section className="dark:bg-gray-900">
@@ -89,7 +94,7 @@ export const Hero = () => {
                     </span>
                 </li>
                 </ul>
-                <button className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-lg bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 my-8">
+                <button onClick={handleClick} className="group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-lg bg-neutral-950 py-1 pl-6 pr-14 font-medium text-neutral-50 my-8">
                     <span className="z-10 pr-2">Sign up</span>
                     <div className="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-lg bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]">
                         <div className="mr-3.5 flex items-center justify-center">
