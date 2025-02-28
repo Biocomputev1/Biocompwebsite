@@ -9,16 +9,15 @@ export const SubstackPosts = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Card */}
-          <div className="rounded-xl w-auto  h-auto overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+          <div className="rounded-xl w-auto  h-auto overflow-hidden shadow-md transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-70 hover:shadow-lg">
           <Link href = "https://www.biocomputeinc.com/p/coming-soon?utm_campaign=post&utm_medium=web">
             <Image src = {blogimage1} alt="BioCompute Logo"/>
             <h2 className="text-xl font-inter mt-6 mb-2 mx-2">Hello World, We Are BioCompute!</h2>
             <p className="text-gray-600 mb-4 mx-2">Prologue</p>
             </Link>
           </div>
-          
           {/* Right Card */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+          <div className="bg-white rounded-xl overflow-hidden shadow-md transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-70 hover:shadow-lg">
             <Link href = "https://www.biocomputeinc.com/p/a-primer-on-dna-no-pun-intended?utm_campaign=post&utm_medium=web">
             <Image src={blogimage2} alt="DNA Double Helix"/>
             <h2 className="text-xl font-inter mt-6 mb-2 mx-2">A Primer on DNA (no pun intended)</h2>
